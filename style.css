@@ -31,6 +31,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -39,6 +41,8 @@ body {
     background: var(--cream);
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* ===== Typography ===== */
@@ -93,12 +97,14 @@ em {
 
 /* ===== Layout ===== */
 .container {
+    width: 100%;
     max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
 .section {
+    width: 100%;
     padding: var(--section-padding) 0;
 }
 
@@ -203,6 +209,7 @@ em {
 }
 
 .hero-content {
+    width: 100%;
     max-width: var(--container-max);
     margin: 0 auto;
     display: grid;
@@ -503,6 +510,10 @@ em {
         text-align: center;
         gap: 2rem;
     }
+
+    .hero {
+        min-height: auto;
+    }
     
     .hero-image {
         position: static;
@@ -511,7 +522,8 @@ em {
     }
     
     .author-headshot {
-        width: min(100%, 420px);
+        width: min(82vw, 320px);
+        max-width: 100%;
         height: auto;
     }
     
