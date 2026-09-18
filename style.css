@@ -216,19 +216,14 @@ em {
     top: calc(64px + 2rem);
 }
 
-.placeholder-headshot {
+.author-headshot {
+    display: block;
     width: 280px;
     height: 350px;
-    background: linear-gradient(135deg, var(--cream-dark) 0%, var(--border) 100%);
-    border: 2px dashed var(--border);
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--warm-gray);
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 1.1rem;
+    box-shadow: 0 18px 45px rgba(45, 43, 40, 0.16);
 }
 
 .hero-text {
@@ -514,7 +509,7 @@ em {
         justify-content: center;
     }
     
-    .placeholder-headshot {
+    .author-headshot {
         width: 240px;
         height: 300px;
     }
