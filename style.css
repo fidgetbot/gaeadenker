@@ -303,6 +303,19 @@ em {
     flex-shrink: 0;
 }
 
+.film-card-poster {
+    grid-template-columns: 220px 1fr;
+}
+
+.film-poster {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px var(--shadow);
+}
+
 .film-info h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -550,6 +563,15 @@ em {
     .film-placeholder {
         width: 100%;
         height: 180px;
+    }
+
+    .film-card-poster {
+        grid-template-columns: 1fr;
+    }
+
+    .film-poster {
+        width: min(46vw, 170px);
+        justify-self: center;
     }
     
     .play-item {
