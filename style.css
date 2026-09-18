@@ -336,6 +336,22 @@ em {
     border-left: 4px solid var(--accent);
 }
 
+.play-item-featured {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.play-poster {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 5px 18px var(--shadow);
+}
+
 .play-item h3 {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
@@ -538,6 +554,16 @@ em {
     
     .play-item {
         padding: 1.5rem;
+    }
+
+    .play-item-featured {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .play-poster {
+        width: min(44vw, 150px);
+        justify-self: center;
     }
     
     .awards-list li {
