@@ -206,9 +206,9 @@ em {
     max-width: var(--container-max);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 4rem;
-    align-items: start;
+    grid-template-columns: minmax(320px, 360px) 1fr;
+    gap: 3rem;
+    align-items: center;
 }
 
 .hero-image {
@@ -218,8 +218,9 @@ em {
 
 .author-headshot {
     display: block;
-    width: 280px;
-    height: 350px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
@@ -510,8 +511,8 @@ em {
     }
     
     .author-headshot {
-        width: 240px;
-        height: 300px;
+        width: min(100%, 420px);
+        height: auto;
     }
     
     .film-card {
